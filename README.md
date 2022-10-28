@@ -9,3 +9,4 @@ Pop {struct S Pop(struct S Stack);},
 Peek of the Stack {void Peek(struct S Stack);}, 
 Displaying all the elements of the Stack {void Display(struct S Stack);}, 
 Flushing all the elements of the Stack {struct S Flush(struct S Stack);}.
+Thank you for using it 😊.

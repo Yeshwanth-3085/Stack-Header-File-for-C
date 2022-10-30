@@ -1,23 +1,30 @@
 # Stack-Header-File-for-C
 
 This header file requires stdio.h & stdlib.h header files to be present in your compiler to work properly.
- 
-This header file can perform 8 Stack Operations: 
 
-Creating a Stack {struct S CreateStack(int Capacity);}, 
+This header file can perform 9 Operations:
 
-Query of Capacity of the Stack {int Capacity(struct S Stack);}, 
+1) Creating a Stack { stack CreateStack(int Capacity); }, 
 
-Status of the Stack {void Status(struct S Stack);}, 
+2) Query of Capacity of the Stack { int CapacityOfStack(stack Stack); },
 
-Push {struct S Push(struct S Stack);}, 
+3) Status of the Stack { void StatusOfStack(stack Stack); }, 
 
-Pop {struct S Pop(struct S Stack);}, 
+4) Push an element into the Stack { stack Push(stack Stack); }, 
 
-Peek of the Stack {void Peek(struct S Stack);}, 
+5) Pop an element from the Stack { stack pop(stack Stack); }, 
 
-Displaying all the elements of the Stack {void Display(struct S Stack);}, 
+6) Peek of the Stack { void Peek(stack Stack); }, 
 
-Flushing all the elements of the Stack {struct S Flush(struct S Stack);}.
+7) Displaying all the elements of the Stack { void DisplayStack(stack Stack); }, 
 
-Thank you for using it 😊.
+8) Flushing all the elements of the Stack { stack FlushStack(stack Stack); }, 
+
+9) Freeing the Stack { void FreeStack(stack Stack); }.
+
+  WARNING: Don't forget use the FreeStack() function at the end of your program, 
+           as this header file uses DMA (calloc()) method to allocate memory dynamically 
+           which needs to be freed after the execution to prevent memory leak.
+           To learn more search for Heap.
+
+  Thank you for using it 😊.

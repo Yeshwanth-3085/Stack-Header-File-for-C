@@ -23,9 +23,6 @@
   WARNING: Don't forget use the FreeStack() function at the end of your program, 
            as this header file uses DMA (calloc()) method to allocate memory dynamically 
            which needs to be freed after the execution to prevent memory leak.
-           To learn more search for Heap.
-
-  Thank you for using it 😊.
 */
 #include <stdio.h>
 #include <stdlib.h>
